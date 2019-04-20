@@ -12,6 +12,7 @@ using Newtonsoft.Json.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using Eut.Entity.Common;
+using Microsoft.Online.SharePoint.TenantAdministration;
 
 namespace Eut.Service.MSSharePoint
 {
@@ -26,7 +27,20 @@ namespace Eut.Service.MSSharePoint
         }
 
         public async Task<string> Get(string endpoint) => await HttpRequest(endpoint, HttpMethod.Get);
-        
+
+        public string GetAllSitesColl(string adminUro)
+        {
+            try
+            {
+                HttpClient client = new HttpClient();
+                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "/_api/lists/getbytitle('DO_NOT_DELETE_SPLIST_TENANTADMIN_AGGREGATED_SITECOLLECTIONS')/items?$select=SiteUrl");
+                request.Headers.Add("Accept", "application/json;odata=verbose");
+                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", _accessToken);
+                return client.SendAsync(request).Result.Content.ReadAsStringAsync().Result;
+            }
+            catch (Exception e) { throw new EutSharePointException("Error while adding item", e); }
+        }
+
         public async Task<string> HttpAddItem(string listEndpoint, IDictionary<string,object> itemProps)
         {
             try

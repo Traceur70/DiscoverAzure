@@ -1,9 +1,10 @@
 
 #Creating a container
-RESGROUP_NAME = "b8497fcf-b470-4d0f-bd94-d6b8280c6cf3"
-CONTAINER_NAME = "acr-tasks"
-ACR_NAME="NaddaContainerRegistry02"
-ACC_NAME="naddacontainerregistry02" #Container registry name in lowercase
+RESGROUP_NAME="poc-asco"
+CONTAINER_NAME="acr-tasks"
+ACR_NAME="NaddaContainerRegistry10"
+ACC_NAME="naddacontainerregistry10" #Container registry name in lowercase
+ACR_PASS="P@ssw0rdP@ssw0rd"
 az acr create --resource-group $RESGROUP_NAME --name $ACR_NAME --sku Premium #Create container registry
 code #Open code, then you have to write this content and save as "Dockerfile"
     # FROM    node:9-alpine
@@ -18,15 +19,15 @@ az acr update -n $ACC_NAME --admin-enabled true #Add an admin to the container
 az acr credential show --name $ACC_NAME #Display admin credentials
 #Create container (you have to replace username and password)
 az container create \
-    --resource-group b8497fcf-b470-4d0f-bd94-d6b8280c6cf3 \
-    --name acr-tasks1 \
+    --resource-group $RESGROUP_NAME \
+    --name $CONTAINER_NAME \
     --image $ACR_NAME.azurecr.io/helloacrtasks:v1 \
     --registry-login-server $ACR_NAME.azurecr.io \
     --ip-address Public \
     --location eastus \
-    --registry-username NaddaContainerRegistry02 \
-    --registry-password "GwhygcwDCtR6j4bQzhsekd=Zs4qA5WVE"
-az container show --resource-group b8497fcf-b470-4d0f-bd94-d6b8280c6cf3 --name acr-tasks1 --query ipAddress.ip --output table #Display IP adress
+    --registry-username $ACR_NAME \
+    --registry-password $ACR_PASS
+az container show --resource-group $$RESGROUP_NAME --name $CONTAINER_NAME --query ipAddress.ip --output table #Display IP adress
 az acr replication create --registry $ACR_NAME --location japaneast #Replicate registry
 az acr replication list --registry $ACR_NAME --output table #List all replicated registries
 

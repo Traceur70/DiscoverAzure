@@ -9,7 +9,18 @@ appUserPass="ET3ET2ET1"
 
 az appservice plan create --name $appPlan --resource-group $resourceGroup --location $appLocation --sku FREE #Create a new service plan
 az webapp create --name $appName --resource-group $resourceGroup --plan $appPlan --deployment-source-url $gitRepo #Create a new webapp linked to a GIT repo
-az storage account create -n $storageAccount -g $resourceGroup -l $appLocation --sku Standard_LRS #Create a storage account
+#Create a storage account
+az storage account create \
+    -n $storageAccount \
+    -g $resourceGroup \
+    -l $appLocation \
+    --kind StorageV2 \
+    --access-tier Hot \
+    --sku Standard_LRS 
+
+
+
+
 az webapp log tail --name $appName --resource-group $resourceGroup #Display log in streaming
 az webapp deployment user set --user-name $appUserName --password $appUserPass #Create a new user's credential
 curl -u $appUserName https://$appName.scm.azurewebsites.net/api/logstream #Get log stream from curl

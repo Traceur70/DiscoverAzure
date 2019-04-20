@@ -1,5 +1,6 @@
-#Create & run an MVC ASP.NET Core project
-dotnet new mvc --name BestBikeApp
+
+dotnet new console --name ConsoleApp01 #Create & run an MVC ASP.NET Core project
+dotnet new mvc --name BestBikeApp #Create console app project
 cd BestBikeApp
 dotnet run
 #Configure & check a git user

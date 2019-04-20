@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Interfaces", "1-Interfaces", "{0D87C522-381B-4723-9A15-AADCE2B2F6F8}"
 EndProject
@@ -24,6 +24,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eut.Service.MSSharePoint", "2-Services\Eut.Service.MSSharePoint\Eut.Service.MSSharePoint.csproj", "{6A6A25EC-86FB-4A42-88DF-9E0B4BE3E563}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eut.Interface.Console01", "1-Interfaces\Eut.Interface.Console01\Eut.Interface.Console01.csproj", "{9146137A-DB46-4D8E-9975-BE4D6B0BE705}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Tests", "0-Tests", "{6947BDB1-ECBC-4ABA-80BF-D181478AA6EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSPODotNetCore", "0-Tests\TestSPODotNetCore\TestSPODotNetCore.csproj", "{81043972-0D28-46FA-96FC-3A6112413C49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +63,10 @@ Global
 		{9146137A-DB46-4D8E-9975-BE4D6B0BE705}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9146137A-DB46-4D8E-9975-BE4D6B0BE705}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9146137A-DB46-4D8E-9975-BE4D6B0BE705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81043972-0D28-46FA-96FC-3A6112413C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81043972-0D28-46FA-96FC-3A6112413C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81043972-0D28-46FA-96FC-3A6112413C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81043972-0D28-46FA-96FC-3A6112413C49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +79,7 @@ Global
 		{95685F1F-284F-4958-AAD2-498E195A519F} = {DAAB2BE7-9EF6-4E96-BE4C-58413454C5C4}
 		{6A6A25EC-86FB-4A42-88DF-9E0B4BE3E563} = {1EE3FDA3-3E9A-4B81-9F4D-840C03ADCEC8}
 		{9146137A-DB46-4D8E-9975-BE4D6B0BE705} = {0D87C522-381B-4723-9A15-AADCE2B2F6F8}
+		{81043972-0D28-46FA-96FC-3A6112413C49} = {6947BDB1-ECBC-4ABA-80BF-D181478AA6EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {407546E0-FD37-47CC-BEFC-27315E450ED9}
