@@ -70,3 +70,34 @@ namespace ConsoleApp01
 }">Program.cs
 
 dotnet run #Test the program
+
+
+################# Develop a site to access blobs storage
+#Create storage
+export STORAGENAME="naddastoragetst01"
+export APPNAME="naddastoragetst01-webapp"
+export LOCATION="westeurope"
+export RESGROUPID="1d4e5a2d-24c2-4ffe-afd5-316c6db201d3"
+az storage account create \
+  --kind StorageV2 \
+  --resource-group $RESGROUPID \
+  --location $LOCATION \
+  --name $STORAGENAME
+
+#Get sources
+git clone https://github.com/MicrosoftDocs/mslearn-store-data-in-azure.git
+cd mslearn-store-data-in-azure/store-app-data-with-azure-blob-storage/src/final
+dotnet add package WindowsAzure.Storage
+dotnet restore
+
+#Configure new webapp
+az appservice plan create --name blob-exercise-plan --resource-group $RESGROUPID
+az webapp create --name $APPNAME --plan blob-exercise-plan --resource-group $RESGROUPID
+CONNECTIONSTRING=$(az storage account show-connection-string --name $STORAGENAME --output tsv)
+az webapp config appsettings set --name $APPNAME --resource-group $RESGROUPID --settings AzureStorageConfig:ConnectionString=$CONNECTIONSTRING AzureStorageConfig:FileContainerName=files
+
+#Publish Webapp
+dotnet publish -o pub
+cd pub
+zip -r ../site.zip *
+az webapp deployment source config-zip --src ../site.zip --name $APPNAME --resource-group $RESGROUPID
