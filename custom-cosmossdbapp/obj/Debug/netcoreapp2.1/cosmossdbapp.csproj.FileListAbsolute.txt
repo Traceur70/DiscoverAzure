@@ -11,3 +11,16 @@ C:\Workspaces\Projects\Tests\DiscoverAzure\cosmossdbapp\obj\Debug\netcoreapp2.1\
 C:\Workspaces\Projects\Tests\DiscoverAzure\cosmossdbapp\obj\Debug\netcoreapp2.1\cosmossdbapp.pdb
 C:\Workspaces\Projects\Tests\DiscoverAzure\cosmossdbapp\bin\Debug\netcoreapp2.1\Microsoft.Azure.Documents.ServiceInterop.dll
 C:\Workspaces\Projects\Tests\DiscoverAzure\cosmossdbapp\bin\Debug\netcoreapp2.1\cosmossdbapp.dll.config
+C:\Workspaces\Projects\Tests\DiscoverAzure\custom-cosmossdbapp\obj\Debug\netcoreapp2.1\cosmossdbapp.csprojAssemblyReference.cache
+C:\Workspaces\Projects\Tests\DiscoverAzure\custom-cosmossdbapp\obj\Debug\netcoreapp2.1\cosmossdbapp.csproj.CoreCompileInputs.cache
+C:\Workspaces\Projects\Tests\DiscoverAzure\custom-cosmossdbapp\obj\Debug\netcoreapp2.1\cosmossdbapp.AssemblyInfoInputs.cache
+C:\Workspaces\Projects\Tests\DiscoverAzure\custom-cosmossdbapp\obj\Debug\netcoreapp2.1\cosmossdbapp.AssemblyInfo.cs
+C:\Workspaces\Projects\Tests\DiscoverAzure\custom-cosmossdbapp\obj\Debug\netcoreapp2.1\cosmossdbapp.dll
+C:\Workspaces\Projects\Tests\DiscoverAzure\custom-cosmossdbapp\obj\Debug\netcoreapp2.1\cosmossdbapp.pdb
+C:\Workspaces\Projects\Tests\DiscoverAzure\custom-cosmossdbapp\bin\Debug\netcoreapp2.1\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Workspaces\Projects\Tests\DiscoverAzure\custom-cosmossdbapp\bin\Debug\netcoreapp2.1\cosmossdbapp.dll.config
+C:\Workspaces\Projects\Tests\DiscoverAzure\custom-cosmossdbapp\bin\Debug\netcoreapp2.1\cosmossdbapp.deps.json
+C:\Workspaces\Projects\Tests\DiscoverAzure\custom-cosmossdbapp\bin\Debug\netcoreapp2.1\cosmossdbapp.runtimeconfig.json
+C:\Workspaces\Projects\Tests\DiscoverAzure\custom-cosmossdbapp\bin\Debug\netcoreapp2.1\cosmossdbapp.runtimeconfig.dev.json
+C:\Workspaces\Projects\Tests\DiscoverAzure\custom-cosmossdbapp\bin\Debug\netcoreapp2.1\cosmossdbapp.dll
+C:\Workspaces\Projects\Tests\DiscoverAzure\custom-cosmossdbapp\bin\Debug\netcoreapp2.1\cosmossdbapp.pdb

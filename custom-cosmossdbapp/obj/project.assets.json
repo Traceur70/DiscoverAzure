@@ -5644,11 +5644,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workspaces\\Projects\\Tests\\DiscoverAzure\\cosmossdbapp\\cosmossdbapp.csproj",
+      "projectUniqueName": "C:\\Workspaces\\Projects\\Tests\\DiscoverAzure\\custom-cosmossdbapp\\cosmossdbapp.csproj",
       "projectName": "cosmossdbapp",
-      "projectPath": "C:\\Workspaces\\Projects\\Tests\\DiscoverAzure\\cosmossdbapp\\cosmossdbapp.csproj",
+      "projectPath": "C:\\Workspaces\\Projects\\Tests\\DiscoverAzure\\custom-cosmossdbapp\\cosmossdbapp.csproj",
       "packagesPath": "C:\\Users\\nadda.UL\\.nuget\\packages\\",
-      "outputPath": "C:\\Workspaces\\Projects\\Tests\\DiscoverAzure\\cosmossdbapp\\obj\\",
+      "outputPath": "C:\\Workspaces\\Projects\\Tests\\DiscoverAzure\\custom-cosmossdbapp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
