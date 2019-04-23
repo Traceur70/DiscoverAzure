@@ -177,3 +177,13 @@ STORAGE_KEY=$(az storage account keys list \
   az monitor metrics list --resource $CONTAINER_ID --output table --metric CPUUsage
   #Get memory usage
   az monitor metrics list --resource $CONTAINER_ID --output table --metric MemoryUsage
+
+#CREATE A COSMOSS DB
+export RESOURCE_GROUP="cc762cce-8d9d-4217-8381-dcef8d29b6c5"
+export NAME="nadda-comosdb-01"
+export DB_NAME="Products"
+
+#Create the account with db & collection
+az cosmosdb create --name $NAME --kind GlobalDocumentDB --resource-group $RESOURCE_GROUP
+az cosmosdb database create --name $NAME --db-name $DB_NAME --resource-group $RESOURCE_GROUP
+az cosmosdb collection create --collection-name "Clothing" --partition-key-path "/productId" --throughput 1000 --name $NAME --db-name $DB_NAME --resource-group $RESOURCE_GROUP
