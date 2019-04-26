@@ -12,6 +12,7 @@
     using Microsoft.Azure.Documents;
 
     public class ConfigurationOptions {
+
         [Option ('d', "database", Required = false, HelpText = "The database to exercise")]
         public string Database { get; set; }
 
@@ -86,6 +87,9 @@
 
         /// <summary>
         /// Main method for the sample.
+        /// Example of call : 
+        ///     PS > dotnet run -- -c Small -o InsertDocument -n 4000 -p 10
+        ///     PS > dotnet run -- -o ReadDocument -l dbs/mslearn/colls/Orders/docs/*docId* -k "*partionKey*" -n 1
         /// </summary>
         /// <param name="args">command line arguments.</param>
         public static void Main (string[] args) {
@@ -128,42 +132,14 @@
             int NumberOfOperations = int.Parse (ConfigurationManager.AppSettings["NumberOfOperations"]);
 
             Options = opts;
-
-            if (Options.Database == null) {
-                Options.Database = DatabaseName;
-            }
-
-            if (Options.Collection == null) {
-                Options.Collection = DataCollectionName;
-            }
-
-            if (Options.Throughput == 0)
-            {
-                Options.Throughput = CollectionThroughput;
-            }
-
-            if (Options.PartitionKey == null)
-            {
-                Options.PartitionKey = PartitionKey;
-            }
-
-            if (Options.Operation == null) {
-                Options.Operation = Operation;
-            }
-
-            if (Options.Parallelism == 0)
-            {
-                Options.Parallelism = DegreeOfParallelism;
-            }
-
-            if (Options.NumberOfOperations == 0) {
-                Options.NumberOfOperations = NumberOfOperations;
-            }
-
-
-
+            if (Options.Database == null) { Options.Database = DatabaseName; }
+            if (Options.Collection == null) { Options.Collection = DataCollectionName; }
+            if (Options.Throughput == 0) { Options.Throughput = CollectionThroughput; }
+            if (Options.PartitionKey == null) { Options.PartitionKey = PartitionKey; }
+            if (Options.Operation == null) { Options.Operation = Operation; }
+            if (Options.Parallelism == 0) { Options.Parallelism = DegreeOfParallelism; }
+            if (Options.NumberOfOperations == 0) { Options.NumberOfOperations = NumberOfOperations; }
             Run(endpoint, authKey);
-
         }
 
         /// <summary>

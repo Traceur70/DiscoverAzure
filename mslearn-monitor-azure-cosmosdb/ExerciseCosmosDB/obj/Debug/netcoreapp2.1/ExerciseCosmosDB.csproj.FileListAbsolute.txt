@@ -1,0 +1,14 @@
+C:\Workspaces\Projects\Tests\DiscoverAzure\mslearn-monitor-azure-cosmosdb\ExerciseCosmosDB\bin\Debug\netcoreapp2.1\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Workspaces\Projects\Tests\DiscoverAzure\mslearn-monitor-azure-cosmosdb\ExerciseCosmosDB\bin\Debug\netcoreapp2.1\DocumentDB.Spatial.Sql.dll
+C:\Workspaces\Projects\Tests\DiscoverAzure\mslearn-monitor-azure-cosmosdb\ExerciseCosmosDB\bin\Debug\netcoreapp2.1\ExerciseCosmosDB.dll.config
+C:\Workspaces\Projects\Tests\DiscoverAzure\mslearn-monitor-azure-cosmosdb\ExerciseCosmosDB\bin\Debug\netcoreapp2.1\ExerciseCosmosDB.deps.json
+C:\Workspaces\Projects\Tests\DiscoverAzure\mslearn-monitor-azure-cosmosdb\ExerciseCosmosDB\bin\Debug\netcoreapp2.1\ExerciseCosmosDB.runtimeconfig.json
+C:\Workspaces\Projects\Tests\DiscoverAzure\mslearn-monitor-azure-cosmosdb\ExerciseCosmosDB\bin\Debug\netcoreapp2.1\ExerciseCosmosDB.runtimeconfig.dev.json
+C:\Workspaces\Projects\Tests\DiscoverAzure\mslearn-monitor-azure-cosmosdb\ExerciseCosmosDB\bin\Debug\netcoreapp2.1\ExerciseCosmosDB.dll
+C:\Workspaces\Projects\Tests\DiscoverAzure\mslearn-monitor-azure-cosmosdb\ExerciseCosmosDB\bin\Debug\netcoreapp2.1\ExerciseCosmosDB.pdb
+C:\Workspaces\Projects\Tests\DiscoverAzure\mslearn-monitor-azure-cosmosdb\ExerciseCosmosDB\obj\Debug\netcoreapp2.1\ExerciseCosmosDB.csprojAssemblyReference.cache
+C:\Workspaces\Projects\Tests\DiscoverAzure\mslearn-monitor-azure-cosmosdb\ExerciseCosmosDB\obj\Debug\netcoreapp2.1\ExerciseCosmosDB.csproj.CoreCompileInputs.cache
+C:\Workspaces\Projects\Tests\DiscoverAzure\mslearn-monitor-azure-cosmosdb\ExerciseCosmosDB\obj\Debug\netcoreapp2.1\ExerciseCosmosDB.AssemblyInfoInputs.cache
+C:\Workspaces\Projects\Tests\DiscoverAzure\mslearn-monitor-azure-cosmosdb\ExerciseCosmosDB\obj\Debug\netcoreapp2.1\ExerciseCosmosDB.AssemblyInfo.cs
+C:\Workspaces\Projects\Tests\DiscoverAzure\mslearn-monitor-azure-cosmosdb\ExerciseCosmosDB\obj\Debug\netcoreapp2.1\ExerciseCosmosDB.dll
+C:\Workspaces\Projects\Tests\DiscoverAzure\mslearn-monitor-azure-cosmosdb\ExerciseCosmosDB\obj\Debug\netcoreapp2.1\ExerciseCosmosDB.pdb

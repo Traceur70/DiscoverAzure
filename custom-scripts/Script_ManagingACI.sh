@@ -187,3 +187,16 @@ export DB_NAME="Products"
 az cosmosdb create --name $NAME --kind GlobalDocumentDB --resource-group $RESOURCE_GROUP
 az cosmosdb database create --name $NAME --db-name $DB_NAME --resource-group $RESOURCE_GROUP
 az cosmosdb collection create --collection-name "Clothing" --partition-key-path "/productId" --throughput 1000 --name $NAME --db-name $DB_NAME --resource-group $RESOURCE_GROUP
+az cosmosdb collection update -g $RESOURCE_GROUP -n $NAME -d mslearn -c Orders --indexing-policy @IndexConfig/index-none.json
+az cosmosdb collection update -g $RESOURCE_GROUP -n $NAME -d mslearn -c Orders --indexing-policy @IndexConfig/index-partial.json
+az cosmosdb collection update -g $RESOURCE_GROUP -n $NAME -d mslearn -c Orders --indexing-policy @IndexConfig/index-lazy-all.json
+
+###MANAGE SERVICE BUS##
+
+#Get secrets
+az servicebus namespace authorization-rule keys list \
+    --resource-group d8e7237b-bb5a-4102-8cdf-b7f13cec8dd9 \
+    --name RootManageSharedAccessKey \
+    --query primaryConnectionString \
+    --output tsv \
+    --namespace-name "naddasalesteamapp"
